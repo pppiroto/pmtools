@@ -40,6 +40,7 @@ def to_idx(s):
 def list_projects(user):
     projects = []
     q = FunctionPointProject.gql("WHERE owner=:1 ORDER BY sort_order", user)
+    #q = FunctionPointProject.gql("WHERE owner=:1", user)
     results = q.fetch(MAX_PROJECT)
     for result in results:
         projects.append(result.to_dict()) 

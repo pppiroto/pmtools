@@ -15,11 +15,6 @@ indexes:
   - name: project_key
   - name: sort_order
 
-- kind: FunctionEntity
-  properties:
-  - name: project_key
-  - name: srt_order
-
 - kind: FunctionPointProject
   properties:
   - name: owner
